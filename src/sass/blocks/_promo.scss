@@ -1,0 +1,74 @@
+.promo {
+    margin-top: 190px;
+    background: url('../img/bg-promo_main.jpg') no-repeat 50%/cover;
+    &__main {
+        background: linear-gradient(89.58deg, #FFFFFF 26.64%, rgba(255, 255, 255, 0) 99.61%);
+        padding-bottom: 24px;
+    }
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 176px;
+        position: relative;
+    }
+    &__info {
+        max-width: 563px;
+        padding-top: 30px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        margin: 0;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 52px;
+        color: #000000;
+        span {
+            font-size: 60px;
+            line-height: 70px;
+            color: #FFFFFF;
+            background: $green;
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 75px;
+        row-gap: 25px;
+        margin-top: 64px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        &-text {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: $black;
+            max-width: 211px;
+        }
+    }
+    &__form-block {
+        padding: 40px 0px;
+        background: #FFFFFF;
+        border-radius: 7px;
+        z-index: 3;
+    }
+    &__form-title {
+        padding-left: 53px;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 23px;
+        color: $black;
+        text-transform: uppercase;
+    }
+}

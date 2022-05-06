@@ -1,0 +1,5 @@
+@mixin font-size($fz, $minFz) {
+    $difference: $fz - $minFz;
+	font-size: calc(#{$minFz}px + #{$difference} * ((100vw - 320px) / 1600));
+};
+	

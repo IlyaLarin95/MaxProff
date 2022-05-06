@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/global';
+@import 'blocks/header';
+@import 'blocks/hamburger';
+@import 'blocks/promo';
+@import 'blocks/promo-form';
+@import 'blocks/radio';
+@import 'blocks/price';
+@import 'blocks/tabs';
+@import 'blocks/work';
+@import 'blocks/sale';
+@import 'blocks/steps';
+@import 'blocks/stuff';
+@import 'blocks/control';
+@import 'blocks/team';
+@import 'blocks/suppliers';
+@import 'blocks/faq';
+@import 'blocks/consultation';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/_test.sass';
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+@import 'base/media';

@@ -1,0 +1,225 @@
+.footer {
+    padding: 35px 0 30px 0;
+    background-color: #2E3648;
+    &__top {
+        display: flex;
+        padding-bottom: 30px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    &__pay {
+        display: flex;
+        flex-direction: column;
+        &-head {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: #CBCBCB;
+        }
+        &-items {
+            margin-top: 14px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__socials {
+        display: flex;
+        gap: 8px;
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                svg {
+                    path {
+                        fill: $green;
+                    }
+                }
+            }
+        }
+    }
+    &__main {
+        margin-left: 150px;
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+        flex: 1 1 auto;
+    }
+    &__services {
+        &-head {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $green;
+        }
+        &-list {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+        &-link {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: #CBCBCB;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 170px;
+        flex: 1 1 auto;
+        &-link {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        &-link {
+            color: #FFFFFF;
+            svg {
+                margin-right: 9px;
+            }
+        }
+        &-text {
+            padding-left: 32px;
+            color: #FFFFFF;
+        }
+        &-btn {
+            background-color: transparent;
+            border: none;
+            display: block;
+            font-size: 14px;
+            line-height: 16px;
+            color: $green;
+            cursor: pointer;
+            padding-left: 32px;
+            margin-top: 5px;
+            width: fit-content;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &-email {
+            display: flex;
+            align-items: center;
+            margin-top: 14px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #ffffff;
+            &:hover {
+                color: $green;
+            }
+            svg {
+                margin-right: 9px;
+            }
+        }
+        &-address {
+            display: flex;
+            align-items: center;
+            margin-top: 9px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            svg {
+                margin-right: 9px;
+            }
+        }
+    }
+    &__bottom {
+        border-top: 1px solid #CBCBCB;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #CBCBCB;
+        &-link {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+    }
+    &__warning {
+        padding: 0 10px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #CBCBCB;
+        text-align: center;
+    }
+    &__git {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #CBCBCB;
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 206px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+            width: 88%;
+            height: 2px;
+            transform: scale(0);
+            transform-origin: top left;
+            background-color: $green;
+            transition: .4s linear all;
+        }
+        svg {
+            max-width: 100%;
+            max-height: 100%;
+            margin-left: 5px;
+            path {
+                transition: .3s ease all;
+            }
+        }
+        &:hover {
+            &:after {
+                transform: scale(1);
+                transition: .4s linear all;
+            }
+            svg {
+                path {
+                    fill: $green;
+                    transition: .6s ease-in all;
+                }
+            }
+        }
+    }
+}

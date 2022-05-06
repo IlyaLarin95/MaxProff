@@ -1,0 +1,81 @@
+.suppliers {
+    padding: 77px 0px 100px 0px;
+    background: url("../img/bg-suppliers.jpg") no-repeat 50%/cover;
+    &__title {
+        text-align: left;
+    }
+    &__subtitle {
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+        max-width: 550px;
+        text-align: left;
+    }
+    &__main {
+        margin-top: 52px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &__sertificate {
+        flex: 1 1 85%;
+        padding: 55px 0px 30px 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-top {
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 65px;
+            gap: 26px;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $black;
+            text-align: right;
+            max-width: 280px;
+        }
+        &-price {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #595959;
+            span {                
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 49px;
+                text-align: center;
+                color: #FFFFFF;
+                background: #2D4872;
+                border-radius: 9px;
+            }
+        }
+        &-btn {
+            margin: 0 auto;
+            margin-top: 34px;
+        }
+    }
+    &__sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 30px;
+        &-img {
+            width: 33.33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    z-index: 10000;
+    span {
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: $blue;
+        transition: .3s ease all;      
+    }
+    &.active {
+        span {
+            box-shadow: none;
+        }
+        span:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 1px);
+            transition: .3s all;
+        }
+        span:nth-child(2) {
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: .3s all;
+        }
+        span:nth-child(3) {
+            transition: .3s all;
+            transform: rotate(-45deg) translate(10px, -7px);
+        }
+    }
+}
+
+.hidden-menu {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease all;
+    &.active {
+        right: 0%;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        padding: 70px 20px 35px 20px;
+        position: relative;
+        width: 78%;
+        height: 100%;
+        z-index: 1;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 auto;
+    }
+    &__btn {
+        padding: 13px 55px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &__items {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &__category {
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__category-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+    }
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+    }
+    &__phone {
+        margin: 0 auto;
+        margin-top: 31px;
+    }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(32, 10, 10);
+        opacity: .55;
+    }
+}
